@@ -18,7 +18,8 @@ class App extends Component {
 
   toggleNote = () => {
     this.setState({
-      showNote: ! this.state.showNote
+      showNote: ! this.state.showNote,
+      note: {}
     });
   }
 
@@ -36,9 +37,9 @@ class App extends Component {
 
   performSubmissionRequest = (data, id) => {
     if (id) {
-      // TODO: perform update request
+      return axios.patch(urlFor(`notes/${id}`), data);
     } else {
-    return axios.post(urlFor('notes'), data;)
+    return axios.post(urlFor('notes'), data);
     }
   }
 
