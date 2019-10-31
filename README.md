@@ -1,3 +1,5 @@
+An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
